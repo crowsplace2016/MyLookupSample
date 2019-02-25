@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="BRIANHPSPECTRE"
   DTS:CreatorName="BRIANHPSPECTRE\crows"
-  DTS:DTSID="{7383682C-F3DD-4769-A0DC-3DF8E460DD17}"
+  DTS:DTSID="{472F376E-72C1-41DD-8B1C-054BFF89AC4F}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.0900.30"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="CacheDemo"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{A3E699B9-8106-4B30-A21C-01F287E64F43}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{FE38B41A-A0EB-42B5-ADC3-450ADB630DBA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -182,7 +182,8 @@
               componentClassID="Microsoft.Cache"
               contactInfo="Cache Transform;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Writes data to a cache (a .caw file) with the Cache Connection Manager. Reuse the cache between multiple Lookup transforms to reduce database load. Share the cache to reduce memory usage. Note: cache data is stored in clear text and not recommended for sensitive data."
-              name="Cache Transform">
+              name="Cache Transform"
+              version="1">
               <properties>
                 <property
                   dataType="System.Boolean"
@@ -1035,6 +1036,19 @@ HumanResources.vEmployee;</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Data into Cache\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load Data into File">
     <LayoutInfo>
@@ -1154,19 +1168,6 @@ HumanResources.vEmployee;</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Data into Cache\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Load Data into File\OLE DB Source">
     <Properties>
       <Property>
@@ -1180,7 +1181,7 @@ HumanResources.vEmployee;</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="AgregateDemo"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{616BD2A8-7E47-4243-95D3-CAD23EDB6717}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{4DF334F4-61C2-4FE2-A0B8-BAA262E51789}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -865,18 +865,6 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\FTP Task"
-      DTS:CreationName="Microsoft.FtpTask"
-      DTS:Description="FTP Task"
-      DTS:DTSID="{BFF231BB-A23F-4FBD-97A4-9B774D00ABD4}"
-      DTS:ExecutableType="Microsoft.FtpTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="FTP Task"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData />
-    </DTS:Executable>
   </DTS:Executables>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -894,10 +882,6 @@
           Size="151.666666666667,42"
           Id="Package\Data Flow Task"
           TopLeft="50.4166659153998,20.4444444444444" />
-        <NodeLayout
-          Size="122,42"
-          Id="Package\FTP Task"
-          TopLeft="54.9999991804361,94.6666666666667" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
